@@ -1,0 +1,110 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  user-select: none;
+  overflow: hidden;
+}
+.keypad {
+  display: inline-flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  padding-top: 24px;
+}
+.row {
+  display: flex;
+}
+.row:first-child {
+  align-items: flex-end;
+}
+.row:last-child {
+  margin-top: 48px;
+  align-items: flex-start;
+}
+.col {
+  width: 100px;
+  height: 100px;
+  margin-right: 28px;
+  border-radius: 28px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.col > img {
+  width: 80px;
+}
+#rect11 {
+  background: #0c7b93;
+}
+#rect12 {
+  background: #27496d;
+  height: 200px;
+}
+#rect13 {
+  background: #00a8cc;
+}
+#rect21 {
+  background: #00a8cc;
+}
+#rect22 {
+  background: #27496d;
+  height: 200px;
+}
+#rect23 {
+  background: #0c7b93;
+}
+
+.control_area {
+  display: inline-flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+}
+.drink_about {
+  display: inline-block;
+  width: 400px;
+  height: 80px;
+  background: #ffefe5;
+  border-radius: 40px;
+  text-align: center;
+  line-height: 80px;
+  font-size: 36px;
+  color: #000;
+}
+.status_bar {
+  display: inline-block;
+  width: 400px;
+  height: 80px;
+  background: #f9f7e8;
+  border-radius: 40px;
+  margin: 40px 0;
+  color: #000;
+}
+.status_bar > div {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.status_bar img {
+  width: 56px;
+}
+
+.status_bar a {
+  text-decoration: none;
+  color: #1890ff;
+  line-height: 1.5;
+  font-size: 24px;
+  margin-left: 24px;
+}
+
+.animation {
+  position: absolute;
+  z-index: 10;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=0"
+    />
+    <title>音乐可视化</title>
+    <link rel="preload" href="./assets/audio/沙锤.mp3" as="audio" />
+    <link rel="preload" href="./assets/audio/脚鼓.mp3" as="audio" />
+    <link rel="preload" href="./assets/audio/饶钹.mp3" as="audio" />
+    <link rel="preload" href="./assets/audio/踏钹.mp3" as="audio" />
+    <link rel="preload" href="./assets/audio/军鼓.mp3" as="audio" />
+    <link rel="preload" href="./assets/audio/掌声.mp3" as="audio" />
+    <link rel="preload" href="./assets/audio/bgmusic.mp3" as="audio" />
+    <link rel="stylesheet" type="text/css" href="./background.css" />
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <script src="./snap.svg-min.js"></script>
+  </head>
+  <body class="demo-2">
+    <svg
+      class="shape-overlays"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+    >
+      <path class="shape-overlays__path"></path>
+      <path class="shape-overlays__path"></path>
+      <path class="shape-overlays__path"></path>
+      <path class="shape-overlays__path"></path>
+    </svg>
+    <div class="keypad">
+      <div class="row">
+        <div class="col" id="rect11">
+          <img src="./assets/icons/audio_icon11.svg" />
+        </div>
+        <div class="col" id="rect12">
+          <img src="./assets/icons/audio_icon12.svg" />
+        </div>
+        <div class="col" id="rect13">
+          <img src="./assets/icons/audio_icon13.svg" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" id="rect21">
+          <img src="./assets/icons/audio_icon21.svg" />
+        </div>
+        <div class="col" id="rect22">
+          <img src="./assets/icons/audio_icon22.svg" />
+        </div>
+        <div class="col" id="rect23">
+          <img src="./assets/icons/audio_icon23.svg" />
+        </div>
+      </div>
+    </div>
+    <div class="control_area">
+      <div class="drink_about">DRINK ABOUT</div>
+      <div class="status_bar">
+        <div id="recording" style="display: none">
+          <img id="pauseIcon" src="./assets/icons/pause.svg" />
+          <img id="stopIcon" src="./assets/icons/stop.svg" />
+          <a href="record.html" target="_black" rel="noopener noreferrer">录制</a>
+        </div>
+        <div id="notrecording" style="display: flex">
+          <img id="startIcon" src="./assets/icons/play.svg" />
+          <a href="record.html" target="_black" rel="noopener noreferrer">录制</a>
+        </div>
+      </div>
+    </div>
+    <script src="./animations.js"></script>
+    <script src="./background.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
